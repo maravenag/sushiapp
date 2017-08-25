@@ -9,7 +9,7 @@ pip install django==1.9.7
 ```
 git clone https://github.com/omab/python-social-auth
 git checkout "8638b75"
-ir a la carpeta de la libreria y ejecutar sudopython setup.py install
+ir a la carpeta de la libreria y ejecutar sudo python setup.py install
 ```
 Once `python social auth` is installed, go to the project and run
 ```
