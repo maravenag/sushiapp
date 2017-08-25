@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Sushi App</title>
+  <meta name="description" content="SushiApp">
+  <meta name="author" content="Matías Aravena">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="/static/angular/angular.min.js"></script>
+  <script src="/static/angular/app.js"></script>
+  <script src="/static/angular/config.js"></script>
+  <script src="/static/angular/api.js"></script>
+
+</head>
+
+<body ng-app="myApp">
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">SushiApp</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href=#>{{user}}</a></li>
+        <li><a href="/logout"><i class="small material-icons right">exit_to_app</i>Log out</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div ng-controller="mainController">
+
+    <list vendor="vendor"></list>
+
+  </div>
+
+</body>
+
+</html>

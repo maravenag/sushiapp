@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Sushi App</title>
+  <meta name="description" content="Angular App Test">
+  <meta name="author" content="Matías Aravena">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+  <script src="/static/angular/angular.min.js"></script>
+  <script src="/static/angular/app.js"></script>
+
+</head>
+
+<body ng-app="myApp">
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">SushiApp</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}" role="button">Login with facebook</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div ng-controller="nameController as c">
+  </div>
+
+</body>
+
+</html>
