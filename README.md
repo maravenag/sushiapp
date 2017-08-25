@@ -2,7 +2,7 @@
 
 # Install Django as
 ```
-pip install django=1.9.7
+pip install django==1.9.7
 ```
 
 # Install python social auth
