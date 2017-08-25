@@ -19,5 +19,5 @@ python manage.py migrate
 #run the app.
 Run the app in the port `8000`
 ```
-python manage.py runsever 8000
+python manage.py runserver 8000
 ```
