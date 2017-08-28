@@ -1,12 +1,6 @@
 var app = angular.module('myApp', []);
 
-app.controller('mainController', ['api', '$scope', function (api, $scope) {
-
-    api.getSushiList().then(function (data) {
-        $scope.vendor = data;
-    });
-
-}]);
+app.controller('mainController', function ($scope) {});
 
 app.component("list", {
     template: `
@@ -31,10 +25,13 @@ app.component("list", {
     </div>
 </div>
     `,
-    bindings: {
-        vendor: '<',
-    },
-    controller: function () {
+    bindings: "="
+    ,
+    controller: ['api', function (api) {
+        var _this = this;
         
-    }
+        api.getSushiList().then(function (data) {
+            _this.vendor = data;
+        });
+    }]
 });
